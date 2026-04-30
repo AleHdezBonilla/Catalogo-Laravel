@@ -28,5 +28,10 @@ public function store(Request $request)
 }
 
 
+public function index()
+{
+    return response()->json(Movie::all());
+}
+
 
 }

@@ -5,7 +5,7 @@ use App\Models\Movie;
 use App\Http\Controllers\MovieController;
 use Illuminate\Http\Request;
 
- 
+Route::get('/movies', [MovieController::class, 'index']);
 
 Route::get('/movies', function () {
     return Movie::all();
