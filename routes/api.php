@@ -7,10 +7,6 @@ use Illuminate\Http\Request;
 
 Route::get('/movies', [MovieController::class, 'index']);
 
-Route::get('/movies', function () {
-    return Movie::all();
-});
-
  
 Route::get('/movies/{id}', function ($id) {
     return Movie::findOrFail($id);
