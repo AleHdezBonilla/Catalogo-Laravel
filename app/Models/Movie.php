@@ -10,6 +10,7 @@ class Movie extends Model
         'title',
         'synopsis',
         'year',
-        'cover'
+        'cover',
+        'trailer'
     ];
 }

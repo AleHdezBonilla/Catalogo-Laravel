@@ -28,7 +28,8 @@ class MovieController extends Controller
             'title' => $request->title,
             'synopsis' => $request->synopsis,
             'year' => $request->year,
-            'cover' => $request->cover
+            'cover' => $request->cover,
+            'trailer' => $request->trailer
         ]);
 
         return response()->json($movie, 201);
@@ -44,7 +45,9 @@ class MovieController extends Controller
             'title' => $request->title,
             'synopsis' => $request->synopsis,
             'year' => $request->year,
-            'cover' => $request->cover
+            'cover' => $request->cover,
+            'trailer' => $request->trailer
+
         ]);
 
         return response()->json($movie, 200);
